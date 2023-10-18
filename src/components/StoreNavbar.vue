@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <nav class="text-black p-4 md:mx-24 sm:mx-4 flex justify-between items-center">
+  <nav class="text-black p-4 flex justify-between items-center">
     <div class="relative md:hidden" @click="toggleDropdown">
       <button>
         <font-awesome-icon :icon="['fas', 'bars']" style="color: #000000; font-size: 1.5rem;" />
@@ -38,7 +38,7 @@ export default {
     </div>
 
     <div class="flex items-center justify-center md:justify-start"> <!-- Center logo on small screens -->
-      <img src="../assets/logo.png" class="w-28 h-auto" alt="Logo">
+      <img src="../assets/logo.png" class="w-32 h-auto" alt="Logo">
     </div>
 
     <div class="hidden md:flex space-x-4">
@@ -63,6 +63,10 @@ export default {
 </template>
 
 <style scoped>
+nav{
+  width: calc(100% - 12rem);
+  margin: 0 auto;
+}
 .nav-item {
   display: flex;
   align-items: center;

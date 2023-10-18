@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import StoreNavbar from '../components/StoreNavbar.vue'
+import StoreContent from '../components/StoreContent.vue'
 </script>
 
 <template>
   <StoreNavbar />
-  <div>
-    <h1>Hello World</h1>
-  </div>
+  <StoreContent />
 </template>

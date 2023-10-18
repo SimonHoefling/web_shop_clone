@@ -1,0 +1,256 @@
+{
+  "men": [
+    {
+      "id": 1,
+      "name": "Knitted jumper with a V-neckline",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Green", "Blue"],
+      "price": 29.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2040666.7210_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2040666.7210_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2040666.7210_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2040666.7210_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details":[
+        "Neckline : neckline with a ribbed trim",
+        "Sleeves : long sleeves",
+        "Details : logo"
+      ],
+      "fit": "Fit : Regular Fit",
+      "material_care": "100% Cotton. Machine washable.",
+      "sustainability": "Eco-friendly materials and production process."
+    },
+    {
+      "id": 2,
+      "name": "Knitted jumper with a V-neckline",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Red", "Black"],
+      "price": 29.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2040666.3162_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2040666.3162_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2040666.3162_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2040666.3162_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Classic five-pocket design",
+        "Button fly closure",
+        "Straight leg fit"
+      ],
+      "fit": "Regular fit",
+      "material_care": "99% Cotton, 1% Elastane. Machine washable.",
+      "sustainability": "Sustainably sourced cotton."
+    },
+    {
+      "id": 3,
+      "name": "Slim fit: sports jacket in a viscose blend",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "Gray"],
+      "price": 139.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2137179.9999_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2137179.9999_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2137179.9999_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2137179.9999_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Texture : Woven texture",
+        "Fastener : buttons",
+        "Pockets : inside pocket"
+      ],
+      "fit": "Fit : Slim Fit",
+      "material_care": "Polyester and cotton blend. Machine washable.",
+      "sustainability": "Recycled materials used."
+    },
+    {
+      "id": 4,
+      "name": "Pure cotton knitted jumper",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Gray", "Blue"],
+      "price": 35.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2138544.91W0_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2138544.91W0_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2138544.91W0_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2138544.91W0_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Texture : textured pattern",
+        "Neckline : crew neck",
+        "Style : In a casual look"
+      ],
+      "fit": "Fit : Regular Fit",
+      "material_care": "Fabric : cotton",
+      "sustainability": "Ethically made."
+    },
+    {
+      "id": 5,
+      "name": "Jacket with a stand-up collar",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["White", "Green"],
+      "price": 50.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2109257.8155_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2109257.8155_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2109257.8155_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2109257.8155_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Pattern : plain",
+        "Collar : stand-up collar",
+        "Sleeves : ribbed cuffs"
+      ],
+      "fit": "Regular fit",
+      "material_care": "Polyester. Machine washable.",
+      "sustainability": "Made with recycled materials."
+    },
+    {
+      "id": 6,
+      "name": "Sweatshirt with contrasting seams",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["White", "Blue"],
+      "price": 33.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2125439.94D5_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2125439.94D5_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2125439.94D5_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2125439.94D5_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Pattern : plain",
+        "Neckline : crew neck",
+        "Style : in a casual look"
+      ],
+      "fit": "Regular fit",
+      "material_care": "Cotton blend. Machine washable.",
+      "sustainability": "Sustainable cotton used."
+    },
+    {
+      "id": 7,
+      "name": "Relaxed fit: Short sleeve shirt with lettering",
+      "sizes": ["7", "8", "9", "10"],
+      "colors": ["Blue", "Black"],
+      "price": 32.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2131019.54D1_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131019.54D1_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131019.54D1_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131019.54D1_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Pattern : plain",
+        "Print : front print",
+        "Details : artwork"
+      ],
+      "fit": "Regular fit",
+      "material_care": "Leather and synthetic. Wipe clean.",
+      "sustainability": "Eco-friendly materials."
+    },
+    {
+      "id": 8,
+      "name": "Relaxed fit: Short sleeve shirt with lettering",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Blue", "White"],
+      "price": 32.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2131019.59D1_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131019.59D1_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131019.59D1_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131019.59D1_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Timeless and versatile polo shirt",
+        "Ribbed collar and cuffs",
+        "Details : artwork"
+      ],
+      "fit": "Regular fit",
+      "material_care": "Cotton. Machine washable.",
+      "sustainability": "Sustainable cotton."
+    },
+    {
+      "id": 9,
+      "name": "Regular fit: trousers made of stretch cotton",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["White", "Brown"],
+      "price": 69.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2143034.98K2_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2143034.98K2_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2143034.98K2_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2143034.98K2_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Fastener : zip",
+        "Pockets : slit pocket",
+        "Waistband : with belt loops"
+      ],
+      "fit": "Regular fit",
+      "material_care": "Cotton. Machine washable.",
+      "sustainability": "Sustainably sourced cotton."
+    },
+    {
+      "id": 10,
+      "name": "Cardigan with a zip",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Gray", "Black"],
+      "price": 79.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2143025.99X0_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2143025.99X0_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2143025.99X0_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2143025.99X0_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Pattern : colour graduation",
+        "Collar : stand-up collar",
+        "Sleeves : long sleeves"
+      ],
+      "fit": "Regular fit",
+      "material_care": "Polyester. Machine washable.",
+      "sustainability": "Made with recycled materials."
+    },
+    {
+      "id": 11,
+      "name": "Regular fit: linen blend shorts",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["White", "Black"],
+      "price": 21.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2131609.8000_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131609.8000_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131609.8000_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131609.8000_d1?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Texture : Woven texture",
+        "Fastener : button",
+        "Pockets : slit pocket"
+      ],
+      "fit": "Regular fit",
+      "material_care": "Fabric : linen blend",
+      "sustainability": "Made with recycled materials."
+    },
+    {
+      "id": 12,
+      "name": "T-shirt in pure cotton",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Gray", "White"],
+      "price": 13.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2131619.98D0_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131619.98D0_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131619.98D0_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131619.98D0_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Pattern : plain",
+        "Print : front print",
+        "Neckline : crew neck"
+      ],
+      "fit": "Regular fit",
+      "material_care": "Fabric : linen blend",
+      "sustainability": "Made with recycled materials."
+    }
+  ]
+}
