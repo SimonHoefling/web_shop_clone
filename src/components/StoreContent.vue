@@ -2,10 +2,11 @@
 import type { YourDataType } from '@/api/apiService';
 
 export default {
+  props: ['selectedGender'],  // SelectedGender prop from the Navbar component.
   data() {
     return {
       apiData: [] as YourDataType[],  // Initialize apiData as an empty array to store your API data.
-      menProductsCount: 0,            // Initialize menProductsCount as 0.
+      productsCount: 0,            // Initialize productsCount as 0.
       selectedImages: {} as { [key: string]: number },  // Initialize selectedImages as an empty object to keep track of selected images.
     };
   },
@@ -30,33 +31,42 @@ export default {
         this.selectedImages[articleIndex] = (this.selectedImages[articleIndex] - 1 + this.apiData[articleIndex].pictures.length) % this.apiData[articleIndex].pictures.length;
       }
     },
+    fetchData() {
+      let endpoint = '/men'; // Default to men.
+
+      if (this.selectedGender === 'men') {
+        endpoint = '/men';
+      } else if (this.selectedGender === 'women') {
+        endpoint = '/women';
+      }
+
+      console.log('StoreContent.vue: Fetching data for endpoint:', endpoint); // Add this line
+
+      if (endpoint) {
+        import('@/api/apiService').then((module) => {
+          module.fetchApiData(endpoint)
+            .then((response) => {
+              this.apiData = response.data;
+              this.apiData.forEach((_, index) => {
+                this.selectedImages[index] = 0;
+              });
+              if (this.apiData.length > 0) {
+                this.productsCount = this.apiData.length;
+              }
+            })
+            .catch((error) => {
+              console.error('Error fetching data:', error);
+            });
+        });
+      }
+    },
   },
   created() {
     // This hook is executed when the component is created.
-
-    import('@/api/apiService').then((module) => {
-      // Import the API service module.
-
-      module.fetchApiData('/men')
-        .then((response) => {
-          // Fetch data from the '/men' API endpoint.
-
-          this.apiData = response.data;  // Store the API data in apiData.
-
-          // Initialize selectedImages for each article to 0 (the first image).
-          this.apiData.forEach((_, index) => {
-            this.selectedImages[index] = 0;
-          });
-
-          // Calculate the number of products for the "men" category.
-          if (this.apiData.length > 0) {
-            this.menProductsCount = this.apiData.length;
-          }
-        })
-        .catch((error) => {
-          console.error('Error fetching data:', error);  // Log an error if there is a problem with data retrieval.
-        });
-    });
+    this.fetchData();
+  },
+  watch: {
+    selectedGender: 'fetchData', // Watch for changes in selectedGender and refetch data when it changes.
   },
 };
 </script>
@@ -92,7 +102,7 @@ export default {
     <div class="content w-full h-full pb-20">
       <div class="heading">
         <p class="text-3xl">Clothing</p>
-        <p class="italic text-xs text-gray-400 ml-2 mb-1">({{ menProductsCount }} Products)</p>
+        <p class="italic text-xs text-gray-400 ml-2 mb-1">({{ productsCount }} Products)</p>
       </div>
       <p class="text-xs max-w-full lg:max-w-[50%]">Find your style – with our looks. From business classics like tailored
         jackets and
@@ -134,22 +144,26 @@ export default {
   padding: 0.2em;
   font-size: 18px;
 }
+
 .container {
   width: calc(100% - 12rem);
   margin: 4rem auto;
   display: flex;
   border: 3px solid black;
 }
+
 .sidebar {
   width: 20%;
   height: 100%;
   border: 2px solid green;
 }
+
 .heading {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
 }
+
 .content {
   border: 2px solid blueviolet;
 }
@@ -171,12 +185,15 @@ img {
   padding: 8px;
   border-radius: 50%;
 }
+
 .left-arrow {
   left: 0;
 }
+
 .right-arrow {
   right: 0;
 }
+
 /* Show the arrows on hover */
 .item:hover .arrow {
   display: block;

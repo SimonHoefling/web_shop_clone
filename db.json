@@ -103,7 +103,7 @@
       ],
       "fit": "Regular fit",
       "material_care": "Polyester. Machine washable.",
-      "sustainability": "Made with recycled materials."
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     },
     {
       "id": 6,
@@ -208,7 +208,7 @@
       ],
       "fit": "Regular fit",
       "material_care": "Polyester. Machine washable.",
-      "sustainability": "Made with recycled materials."
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     },
     {
       "id": 11,
@@ -229,7 +229,7 @@
       ],
       "fit": "Regular fit",
       "material_care": "Fabric : linen blend",
-      "sustainability": "Made with recycled materials."
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     },
     {
       "id": 12,
@@ -250,7 +250,264 @@
       ],
       "fit": "Regular fit",
       "material_care": "Fabric : linen blend",
-      "sustainability": "Made with recycled materials."
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    }
+  ],
+
+
+
+  "women": [
+    {
+      "id": 13,
+      "name": "Pure cotton tracksuit bottoms",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "Blue"],
+      "price": 51.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2135380.9999_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2135380.9999_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2135380.9999_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2135380.9999_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details":[
+        "Pockets : slit pocket",
+        "Waistband : elasticated waistband",
+        "Style : in a casual look"
+      ],
+      "fit": "Fit : Relaxed Fit",
+      "material_care": "100% Cotton. Machine washable.",
+      "sustainability": "Quality : high-quality"
+    },
+    {
+      "id": 14,
+      "name": "Denim trousers",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Blue", "Black"],
+      "price": 69.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2119155.57Z6_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2119155.57Z6_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2119155.57Z6_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2119155.57Z6_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Look : used look",
+        "Fastener : button",
+        "Details : distressed effects"
+      ],
+      "fit": "Fit : Skinny fit",
+      "material_care": "Fabric : denim",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    },
+    {
+      "id": 15,
+      "name": "Regular fit: cloth trousers",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "Blue"],
+      "price": 99.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2136881.5959_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2136881.5959_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2136881.5959_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2136881.5959_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Texture : pressed pleats",
+        "Fastener : zip",
+        "Pockets : slit pocket"
+      ],
+      "fit": "Rise : High rise",
+      "material_care": "Fabric : woven fabric",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    },
+    {
+      "id": 16,
+      "name": "Quilted coat with a hood",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Green", "Black"],
+      "price": 169.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2117031.7946_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2117031.7946_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2117031.7946_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2117031.7946_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Texture : quilting",
+        "Hood : With a drawstring panel",
+        "Sleeves : long sleeves"
+      ],
+      "fit": "Fit : Regular Fit",
+      "material_care": "Outer fabric: 100% Polyester; Lining: 100% Polyester",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    },
+    {
+      "id": 17,
+      "name": "Coat with a stowaway hood",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "Gray"],
+      "price": 129.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2120482.9999_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2120482.9999_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2120482.9999_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2120482.9999_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Look : matte",
+        "Collar : stand-up collar",
+        "Fastener : two-way zip"
+      ],
+      "fit": "Regular fit",
+      "material_care": "Fabric : woven fabric",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    },
+    {
+      "id": 18,
+      "name": "T-Shirt",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Black", "Gray"],
+      "price": 29.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2140062.9999_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2140062.9999_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2140062.9999_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2140062.9999_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Collar : stand-up collar",
+        "astener : open-fronted",
+        "Sleeves : long sleeves"
+      ],
+      "fit": "Fit : Slim Fit",
+      "material_care": "Polyester. Machine washable.",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    },
+    {
+      "id": 19,
+      "name": "Fine knit jumper with glitter yarn",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Gray", "Pink"],
+      "price": 45.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2137906.9400_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2137906.9400_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2137906.9400_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2137906.9400_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Pattern : knit pattern",
+        "Neckline : neckline with a ribbed trim",
+        "Sleeves : long sleeves"
+      ],
+      "fit": "Regular fit",
+      "material_care": "Polyester. Machine washable.",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    },
+    {
+      "id": 20,
+      "name": "Polo shirt with stripes",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Yellow", "Gray"],
+      "price": 21.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2113882.15G0_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2113882.15G0_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2113882.15G0_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2113882.15G0_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Pattern : striped",
+        "Collar : polo collar",
+        "Sleeves : dropped shoulders"
+      ],
+      "fit": "Fit : Loose Fit",
+      "material_care": "Fabric : cotton",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    },
+    {
+      "id": 21,
+      "name": "Viscose kimono blouse",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Beige", "Black"],
+      "price": 34.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2122467.80A1_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2122467.80A1_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2122467.80A1_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2122467.80A1_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Pattern : abstract pattern",
+        "Fastener : open-fronted",
+        "Sleeves : 3/4-length sleeves"
+      ],
+      "fit": "Fit : Loose Fit",
+      "material_care": "Polyester. Machine washable.",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    },
+    {
+      "id": 22,
+      "name": "Denim trousers",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Blue", "Black"],
+      "price": 69.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2144923.55Z4_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2144923.55Z4_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2144923.55Z4_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2144923.55Z4_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Fastener : buttons",
+        "Pockets : five-pocket design",
+        "Waistband : with belt loops"
+      ],
+      "fit": "Fit : regular",
+      "material_care": "Polyester. Machine washable.",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    },
+    {
+      "id": 23,
+      "name": "Denim shorts in a vintage look",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Blue", "Black"],
+      "price": 25.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2113439.55Y4_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2113439.55Y4_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2113439.55Y4_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2113439.55Y4_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Pockets : slit pocket",
+        "Waistband : elasticated waistband",
+        "Occasion : Casual"
+      ],
+      "fit": "Fit : Regular Fit",
+      "material_care": "Polyester. Machine washable.",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    },
+    {
+      "id": 24,
+      "name": "Blouse with smocked details",
+      "sizes": ["S", "M", "L", "XL"],
+      "colors": ["Gray", "Black"],
+      "price": 34.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2119619.99A0_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2119619.99A0_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2119619.99A0_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2119619.99A0_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Pattern : all-over pattern",
+        "Neckline : V-neckline",
+        "Sleeves : wide sleeves"
+      ],
+      "fit": "Fit : Regular Fit",
+      "material_care": "Polyester. Machine washable.",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     }
   ]
 }

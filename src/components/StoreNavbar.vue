@@ -2,13 +2,20 @@
 export default {
   data() {
     return {
-      isDropdownOpen: false
+      isDropdownOpen: false,
+      selectedGender: '', // Add this property
     };
   },
   methods: {
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;
+    },
+    selectGender(gender: string) {
+      this.selectedGender = gender;
+      this.$emit('update:selectedGender', gender); // Emit the event with the correct name
+      this.isDropdownOpen = false; // Close the dropdown after selection
     }
+
   }
 };
 </script>
@@ -21,8 +28,9 @@ export default {
       </button>
       <div v-if="isDropdownOpen" class="absolute left-0 mt-2 bg-white border rounded shadow-lg">
         <ul class="py-1">
-          <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-red-200">WOMAN</a></li>
-          <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-red-200">MAN</a></li>
+          <li><a href="#" @click="selectGender('women')" class="block px-4 py-2 text-gray-800 hover:bg-red-200">WOMAN</a>
+          </li>
+          <li><a href="#" @click="selectGender('men')" class="block px-4 py-2 text-gray-800 hover:bg-red-200">MAN</a></li>
           <hr>
           <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-red-200">Shops</a></li>
           <li><a href="#" class="block px-4 py-2 text-gray-800 hover-bg-red-200">My account</a></li>
@@ -33,11 +41,11 @@ export default {
     </div>
 
     <div class="hidden md:flex space-x-4">
-      <a href="#">WOMAN</a>
-      <a href="#">MAN</a>
+      <a href="#" @click="selectGender('women')">WOMAN</a>
+      <a href="#" @click="selectGender('men')">MAN</a>
     </div>
 
-    <div class="flex items-center justify-center md:justify-start"> <!-- Center logo on small screens -->
+    <div class="flex items-center justify-center md:justify-start">
       <img src="../assets/logo.png" class="w-32 h-auto" alt="Logo">
     </div>
 
@@ -63,10 +71,11 @@ export default {
 </template>
 
 <style scoped>
-nav{
+nav {
   width: calc(100% - 12rem);
   margin: 0 auto;
 }
+
 .nav-item {
   display: flex;
   align-items: center;
