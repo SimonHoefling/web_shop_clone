@@ -3,7 +3,7 @@ export default {
   data() {
     return {
       isDropdownOpen: false,
-      selectedGender: '', // Add this property
+      selectedGender: 'men',
     };
   },
   methods: {
@@ -41,9 +41,10 @@ export default {
     </div>
 
     <div class="hidden md:flex space-x-4">
-      <a href="#" @click="selectGender('women')">WOMAN</a>
-      <a href="#" @click="selectGender('men')">MAN</a>
+      <a href="#" @click="selectGender('women')" :class="{ 'active': selectedGender === 'women' }">WOMAN</a>
+      <a href="#" @click="selectGender('men')" :class="{ 'active': selectedGender === 'men' }">MAN</a>
     </div>
+
 
     <div class="flex items-center justify-center md:justify-start">
       <img src="../assets/logo.png" class="w-32 h-auto" alt="Logo">
@@ -81,5 +82,10 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+/* Add styles for the active class */
+.active {
+  border-bottom: 2px solid #000000;
 }
 </style>
