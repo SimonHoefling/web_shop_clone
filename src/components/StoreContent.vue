@@ -163,13 +163,11 @@ export default {
   width: calc(100% - 2rem);
   margin: 2rem auto;
   display: flex;
-  border: 3px solid black;
 }
 
 .sidebar {
   width: 20%;
   height: 100%;
-  border: 2px solid green;
 }
 
 .heading {
@@ -178,9 +176,7 @@ export default {
   align-items: flex-end;
 }
 
-.content {
-  border: 2px solid blueviolet;
-}
+.content {}
 
 img {
   width: 100%;

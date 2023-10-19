@@ -42,8 +42,8 @@ export default {
     </div>
 
     <div class="hidden md:flex space-x-4">
-      <a href="#" @click="selectGender('women')" :class="{ 'active': selectedGender === 'women' }">WOMAN</a>
-      <a href="#" @click="selectGender('men')" :class="{ 'active': selectedGender === 'men' }">MAN</a>
+      <router-link to="#" @click="selectGender('women')" :class="{ 'active': selectedGender === 'women' }">WOMAN</router-link>
+      <router-link to="#" @click="selectGender('men')" :class="{ 'active': selectedGender === 'men' }">MAN</router-link>
     </div>
 
 
@@ -52,22 +52,22 @@ export default {
     </div>
 
     <div class="hidden md:flex space-x-4">
-      <a href="#" class="nav-item">
+      <router-link to="#" class="nav-item">
         <font-awesome-icon :icon="['fas', 'globe']" style="color: #000000; font-size: 1.5rem;" />
         Shops
-      </a>
-      <a href="#" class="nav-item">
+      </router-link>
+      <router-link to="#" class="nav-item">
         <font-awesome-icon :icon="['fas', 'user']" style="color: #000000; font-size: 1.5rem;" />
         My account
-      </a>
-      <a href="#" class="nav-item">
+      </router-link>
+      <router-link to="#" class="nav-item">
         <font-awesome-icon :icon="['fas', 'heart']" style="color: #000000; font-size: 1.5rem;" />
         Wishlist
-      </a>
-      <a href="#" class="nav-item">
+      </router-link>
+      <router-link to="#" class="nav-item">
         <font-awesome-icon :icon="['fas', 'bag-shopping']" style="color: #000000; font-size: 1.5rem;" />
         Cart
-      </a>
+      </router-link>
     </div>
   </nav>
 </template>
