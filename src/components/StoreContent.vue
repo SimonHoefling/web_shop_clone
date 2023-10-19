@@ -8,6 +8,25 @@ export default {
       apiData: [] as YourDataType[],  // Initialize apiData as an empty array to store your API data.
       productsCount: 0,            // Initialize productsCount as 0.
       selectedImages: {} as { [key: string]: number },  // Initialize selectedImages as an empty object to keep track of selected images.
+      sidebarItems: [
+      'Clothing',
+      'Our best-seller',
+      'Shirts & Polos',
+      'Jumper & cardigans',
+      'Jackets & coats',
+      'Jeans',
+      'Trousers',
+      'Shirts',
+      'Sweatshirts & jackets',
+      'Big Sizes',
+      'Tall Sizes',
+      'Tailored jackets & waistcoats',
+      'Suits',
+      'Bermuda shorts',
+      'Basics',
+      'Business Wear'
+    ],
+    selectedIndex: 0
     };
   },
   methods: {
@@ -60,6 +79,10 @@ export default {
         });
       }
     },
+    // This is the function that will be called when an item in the sidebar is clicked to make it bold.
+    selectItem(index: number) {
+    this.selectedIndex = index;
+  }
   },
   created() {
     // This hook is executed when the component is created.
@@ -78,27 +101,17 @@ export default {
 
   <div class="container mt-4 pb-16">
 
+    <!-- Sidebar -->
     <div class="sidebar hidden lg:block">
       <ul class="text-s">
-        <li class="my-2 cursor-pointer font-semibold">Clothing</li>
-        <li class="my-2 cursor-pointer">Our best-seller</li>
-        <li class="my-2 cursor-pointer">Shirts & Polos</li>
-        <li class="my-2 cursor-pointer">Jumper & cardingans</li>
-        <li class="my-2 cursor-pointer">Jackets & coats</li>
-        <li class="my-2 cursor-pointer">Jeans</li>
-        <li class="my-2 cursor-pointer">Trousers</li>
-        <li class="my-2 cursor-pointer">Shirts</li>
-        <li class="my-2 cursor-pointer">Sweatshirts & -jackets</li>
-        <li class="my-2 cursor-pointer">Big Sizes</li>
-        <li class="my-2 cursor-pointer">Tall Sizes</li>
-        <li class="my-2 cursor-pointer">Tailored jackets & waitstcoats</li>
-        <li class="my-2 cursor-pointer">Suits</li>
-        <li class="my-2 cursor-pointer">Bermuda shorts</li>
-        <li class="my-2 cursor-pointer">Basics</li>
-        <li class="my-2 cursor-pointer">Business Wear</li>
+        <li v-for="(item, index) in sidebarItems" :key="index" class="my-2 cursor-pointer"
+          :class="{ 'font-semibold': selectedIndex === index }" @click="selectItem(index)">
+          {{ item }}
+        </li>
       </ul>
     </div>
 
+    <!-- Content container -->
     <div class="content w-full h-full pb-20">
       <div class="heading">
         <p class="text-3xl">Clothing</p>
@@ -110,6 +123,7 @@ export default {
         hoodies and tracksuit bottoms: Be inspired by our designs and find outfits that are perfect for you.
       </p>
 
+      <!-- Articles grid -->
       <div class="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-32 my-4 h-full">
         <div class="item relative" v-for="(item, index) in apiData" :key="index">
           <div class="arrow left-arrow" @click="showPreviousImage(index)">
@@ -146,8 +160,8 @@ export default {
 }
 
 .container {
-  width: calc(100% - 12rem);
-  margin: 4rem auto;
+  width: calc(100% - 2rem);
+  margin: 2rem auto;
   display: flex;
   border: 3px solid black;
 }
