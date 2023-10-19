@@ -1,32 +1,40 @@
 <script lang="ts">
 import type { YourDataType } from '@/api/apiService';
+import ArticleModal from './ArticleModal.vue'; // Import the modal component
 
 export default {
   props: ['selectedGender'],  // SelectedGender prop from the Navbar component.
+  components: {
+    ArticleModal, // Register the ArticleModal component here.
+  },
+
   data() {
     return {
       apiData: [] as YourDataType[],  // Initialize apiData as an empty array to store your API data.
       productsCount: 0,            // Initialize productsCount as 0.
       selectedImages: {} as { [key: string]: number },  // Initialize selectedImages as an empty object to keep track of selected images.
+      isModalOpen: false,
+      selectedArticle: null as YourDataType | null,
+      selectedImageIndex: null as Number | null,
       sidebarItems: [
-      'Clothing',
-      'Our best-seller',
-      'Shirts & Polos',
-      'Jumper & cardigans',
-      'Jackets & coats',
-      'Jeans',
-      'Trousers',
-      'Shirts',
-      'Sweatshirts & jackets',
-      'Big Sizes',
-      'Tall Sizes',
-      'Tailored jackets & waistcoats',
-      'Suits',
-      'Bermuda shorts',
-      'Basics',
-      'Business Wear'
-    ],
-    selectedIndex: 0
+        'Clothing',
+        'Our best-seller',
+        'Shirts & Polos',
+        'Jumper & cardigans',
+        'Jackets & coats',
+        'Jeans',
+        'Trousers',
+        'Shirts',
+        'Sweatshirts & jackets',
+        'Big Sizes',
+        'Tall Sizes',
+        'Tailored jackets & waistcoats',
+        'Suits',
+        'Bermuda shorts',
+        'Basics',
+        'Business Wear'
+      ],
+      selectedIndex: 0
     };
   },
   methods: {
@@ -50,6 +58,18 @@ export default {
         this.selectedImages[articleIndex] = (this.selectedImages[articleIndex] - 1 + this.apiData[articleIndex].pictures.length) % this.apiData[articleIndex].pictures.length;
       }
     },
+
+    openModal(article: YourDataType, imageIndex: number) {
+      console.log('Opening modal')
+      this.selectedArticle = article;
+      this.selectedImageIndex = imageIndex;
+      this.isModalOpen = true;
+    },
+
+    closeModal() {
+      this.isModalOpen = false;
+    },
+
     fetchData() {
       let endpoint = '/men'; // Default to men.
 
@@ -81,8 +101,8 @@ export default {
     },
     // This is the function that will be called when an item in the sidebar is clicked to make it bold.
     selectItem(index: number) {
-    this.selectedIndex = index;
-  }
+      this.selectedIndex = index;
+    }
   },
   created() {
     // This hook is executed when the component is created.
@@ -132,7 +152,7 @@ export default {
           <div class="arrow right-arrow" @click="showNextImage(index)">
             <font-awesome-icon :icon="['fas', 'chevron-right']" />
           </div>
-          <div class="image-container">
+          <div class="image-container" @click="openModal(item, selectedImages[index])">
             <img :src="item.pictures[selectedImages[index]]" class="bg-gray-200 h-128 cursor-pointer object-contain" />
           </div>
           <div class="absolute top-0 right-0 flex flex-col p-2">
@@ -146,6 +166,10 @@ export default {
       </div>
 
     </div>
+
+    <!-- Render the modal when it's open -->
+    <ArticleModal v-if="isModalOpen" :selected-article="selectedArticle" :selected-image-index="selectedImageIndex"
+      @close="closeModal" />
 
   </div>
 </template>
@@ -176,7 +200,6 @@ export default {
   align-items: flex-end;
 }
 
-.content {}
 
 img {
   width: 100%;
@@ -204,7 +227,6 @@ img {
   right: 0;
 }
 
-/* Show the arrows on hover */
 .item:hover .arrow {
   display: block;
 }
