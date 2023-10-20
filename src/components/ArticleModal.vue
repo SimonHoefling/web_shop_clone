@@ -2,19 +2,41 @@
 import { defineProps, defineEmits, ref } from 'vue';
 
 const { selectedArticle, selectedImageIndex } = defineProps(['selectedArticle', 'selectedImageIndex']);
-const emits = defineEmits(['close']);
+const emits = defineEmits(['close', 'showNextImage', 'showPreviousImage']);
 
-const closeModal = () => {
-  emits('close');
-};
-
+const localSelectedImageIndex = ref(selectedImageIndex);
 const sizes = ref(selectedArticle.sizes);
 const selectedSize = ref('XS');
 
 const updateSelectedSize = (size: string) => {
   selectedSize.value = size;
 };
+
+const showNextImage = () => {
+  // Function to show the next image when the right arrow is clicked.
+  if (localSelectedImageIndex.value === undefined) {
+    localSelectedImageIndex.value = 0; // Initialize with the first image.
+  } else {
+    localSelectedImageIndex.value = (localSelectedImageIndex.value + 1) % selectedArticle.pictures.length;
+  }
+  emits('showNextImage', localSelectedImageIndex.value);
+};
+
+const showPreviousImage = () => {
+  // Function to show the previous image when the left arrow is clicked.
+  if (localSelectedImageIndex.value === undefined) {
+    localSelectedImageIndex.value = selectedArticle.pictures.length - 1; // Initialize with the last image.
+  } else {
+    localSelectedImageIndex.value = (localSelectedImageIndex.value - 1 + selectedArticle.pictures.length) % selectedArticle.pictures.length;
+  }
+  emits('showPreviousImage', localSelectedImageIndex.value);
+};
+
+const closeModal = () => {
+  emits('close');
+};
 </script>
+
 
 <template>
   <div class="modal fixed top-0 left-0 w-full h-full flex items-center justify-center z-50">
@@ -23,10 +45,22 @@ const updateSelectedSize = (size: string) => {
         icon="times"></font-awesome-icon>
 
       <div class="flex flex-row mt-12">
-        <!-- Left side: Display article image -->
-        <div class="w-3/5">
-          <img :src="selectedArticle.pictures[selectedImageIndex]" alt="Article Image" />
+
+        <!-- Display article image -->
+        <div class="w-3/5 relative flex items-center justify-center">
+          <!-- Left arrow to show previous image -->
+          <div class="arrow left-arrow absolute left-4" @click="showPreviousImage">
+            <font-awesome-icon :icon="['fas', 'chevron-left']" />
+          </div>
+
+          <img :src="selectedArticle.pictures[localSelectedImageIndex]" alt="Article Image" />
+
+          <!-- Right arrow to show next image -->
+          <div class="arrow right-arrow absolute right-4" @click="showNextImage">
+            <font-awesome-icon :icon="['fas', 'chevron-right']" />
+          </div>
         </div>
+
 
         <!-- Right side: Article details -->
         <div class="w-2/5 pl-4">
@@ -47,12 +81,12 @@ const updateSelectedSize = (size: string) => {
               {{ size }}
             </p>
           </div>
-
         </div>
       </div>
     </div>
   </div>
 </template>
+
 
 <style scoped>
 .size-badge {
