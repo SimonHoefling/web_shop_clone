@@ -11,6 +11,8 @@ const localSelectedImageIndex = ref(selectedImageIndex);
 const sizes = ref(selectedArticle.sizes);
 const selectedSize = ref(selectedArticle.sizes[0]);
 const selectedColor = ref(selectedArticle.colors[0]);
+const numPictures = computed(() => selectedArticle.pictures.length);
+
 
 // Function to update the selected size
 const updateSelectedSize = (size: string) => {
@@ -57,17 +59,17 @@ const colorClassMap = computed(() => {
 });
 </script>
 
-
 <template>
   <div class="modal fixed top-0 left-0 w-full h-full flex items-center justify-center z-50">
-    <div class="modal-content bg-white w-3/4 md:w-1/2 max-h-full overflow-y-auto p-4 relative custom-shadow">
+    <div
+      class="modal-content bg-white w-11/12 md:w-3/4 lg:w-1/2 mt-4 max-h-full overflow-y-auto p-4 relative custom-shadow">
       <font-awesome-icon @click="closeModal" class="cursor-pointer absolute top-4 right-4 text-black text-2xl"
         icon="times"></font-awesome-icon>
 
-      <div class="flex flex-row mt-12">
+      <div class="flex flex-col md:flex-row mt-12">
 
         <!-- Left side: Article images -->
-        <div class="w-3/5 relative flex items-center justify-center">
+        <div class="w-full md:w-3/5 relative flex items-center justify-center">
           <!-- Left arrow to show previous image -->
           <div class="arrow left-arrow absolute left-4 cursor-pointer" @click="showPreviousImage">
             <font-awesome-icon :icon="['fas', 'chevron-left']" />
@@ -79,11 +81,14 @@ const colorClassMap = computed(() => {
           <div class="arrow right-arrow absolute right-4 cursor-pointer" @click="showNextImage">
             <font-awesome-icon :icon="['fas', 'chevron-right']" />
           </div>
+          <div class="image-indicators absolute bottom-4  flex justify-center">
+            <span v-for="index in numPictures" :key="index" class="indicator"
+              :class="{ 'active': index - 1 === localSelectedImageIndex }"></span>
+          </div>
         </div>
 
-
         <!-- Right side: Article details -->
-        <div class="w-2/5 pl-4">
+        <div class="w-full md:w-2/5 pl-4">
           <p class="font-bold mt-4">Brand New</p>
           <p class="mt-4">{{ selectedArticle.name }}</p>
           <div class="flex items-center justify-between">
@@ -145,7 +150,7 @@ const colorClassMap = computed(() => {
   gap: 5px;
 }
 
-/* Define CSS classes for each color */
+/* CSS classes for each color below */
 .color-black {
   width: 20px;
   height: 20px;
@@ -193,5 +198,24 @@ const colorClassMap = computed(() => {
 /* Add a gray border for the selected color */
 .color-circle.selected {
   border-color: rgb(106, 104, 104);
+}
+
+/* Styling for the indicators on the image */
+.image-indicators {
+  border-radius: 99px;
+  padding: 2px
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #959292;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #333;
 }
 </style>
