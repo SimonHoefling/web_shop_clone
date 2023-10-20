@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Knitted jumper with a V-neckline",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Green", "Blue"],
       "price": 29.99,
       "pictures": [
@@ -24,7 +24,7 @@
     {
       "id": 2,
       "name": "Knitted jumper with a V-neckline",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Red", "Black"],
       "price": 29.99,
       "pictures": [
@@ -45,7 +45,7 @@
     {
       "id": 3,
       "name": "Slim fit: sports jacket in a viscose blend",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Black", "Gray"],
       "price": 139.99,
       "pictures": [
@@ -66,7 +66,7 @@
     {
       "id": 4,
       "name": "Pure cotton knitted jumper",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Gray", "Blue"],
       "price": 35.99,
       "pictures": [
@@ -87,7 +87,7 @@
     {
       "id": 5,
       "name": "Jacket with a stand-up collar",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["White", "Green"],
       "price": 50.99,
       "pictures": [
@@ -108,7 +108,7 @@
     {
       "id": 6,
       "name": "Sweatshirt with contrasting seams",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["White", "Blue"],
       "price": 33.99,
       "pictures": [
@@ -129,7 +129,7 @@
     {
       "id": 7,
       "name": "Relaxed fit: Short sleeve shirt with lettering",
-      "sizes": ["7", "8", "9", "10"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Blue", "Black"],
       "price": 32.99,
       "pictures": [
@@ -150,7 +150,7 @@
     {
       "id": 8,
       "name": "Relaxed fit: Short sleeve shirt with lettering",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Blue", "White"],
       "price": 32.99,
       "pictures": [
@@ -171,7 +171,7 @@
     {
       "id": 9,
       "name": "Regular fit: trousers made of stretch cotton",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["White", "Brown"],
       "price": 69.99,
       "pictures": [
@@ -192,7 +192,7 @@
     {
       "id": 10,
       "name": "Cardigan with a zip",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Gray", "Black"],
       "price": 79.99,
       "pictures": [
@@ -213,7 +213,7 @@
     {
       "id": 11,
       "name": "Regular fit: linen blend shorts",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["White", "Black"],
       "price": 21.99,
       "pictures": [
@@ -234,7 +234,7 @@
     {
       "id": 12,
       "name": "T-shirt in pure cotton",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Gray", "White"],
       "price": 13.99,
       "pictures": [
@@ -251,6 +251,69 @@
       "fit": "Regular fit",
       "material_care": "Fabric : linen blend",
       "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    },
+    {
+      "id": 13,
+      "name": "Linen blend trousers",
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
+      "colors": ["Blue", "White"],
+      "price": 25.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2131600.5852_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131600.5852_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131600.5852_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2131600.5852_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Fastener : open-fronted",
+        "Pockets : patch pocket",
+        "Waistband : elasticated waistband"
+      ],
+      "fit": "Fit : Regular Fit",
+      "material_care": "Fabric : linen blend",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    },
+    {
+      "id": 14,
+      "name": "Oversized T-shirt",
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
+      "colors": ["Blue", "White"],
+      "price": 16.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2119065.59D1_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2119065.59D1_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2119065.59D1_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2119065.59D1_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Neckline : crew neck",
+        "Details : logo appliqué",
+        "Style : in a casual look"
+      ],
+      "fit": "Fit : Relaxed Fit",
+      "material_care": "Fabric : cotton",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+    },
+    {
+      "id": 15,
+      "name": "Cotton T-shirt with a front print",
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
+      "colors": ["Orange", "White"],
+      "price": 25.99,
+      "pictures": [
+        "https://media.soliver.com/i/soliver/2135646.09D2_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2135646.09D2_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2135646.09D2_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
+        "https://media.soliver.com/i/soliver/2135646.09D2_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800"
+      ],
+      "details": [
+        "Print : front print",
+        "Sleeves : short sleeves",
+        "Neckline : crew neck"
+      ],
+      "fit": "Regular fit",
+      "material_care": "Fabric : cotton",
+      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     }
   ],
 
@@ -258,9 +321,9 @@
 
   "women": [
     {
-      "id": 13,
+      "id": 16,
       "name": "Pure cotton tracksuit bottoms",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Black", "Blue"],
       "price": 51.99,
       "pictures": [
@@ -279,9 +342,9 @@
       "sustainability": "Quality : high-quality"
     },
     {
-      "id": 14,
+      "id": 17,
       "name": "Denim trousers",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Blue", "Black"],
       "price": 69.99,
       "pictures": [
@@ -300,9 +363,9 @@
       "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     },
     {
-      "id": 15,
+      "id": 18,
       "name": "Regular fit: cloth trousers",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Black", "Blue"],
       "price": 99.99,
       "pictures": [
@@ -321,9 +384,9 @@
       "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     },
     {
-      "id": 16,
+      "id": 19,
       "name": "Quilted coat with a hood",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Green", "Black"],
       "price": 169.99,
       "pictures": [
@@ -342,9 +405,9 @@
       "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     },
     {
-      "id": 17,
+      "id": 20,
       "name": "Coat with a stowaway hood",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Black", "Gray"],
       "price": 129.99,
       "pictures": [
@@ -363,9 +426,9 @@
       "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     },
     {
-      "id": 18,
+      "id": 21,
       "name": "T-Shirt",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Black", "Gray"],
       "price": 29.99,
       "pictures": [
@@ -384,9 +447,9 @@
       "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     },
     {
-      "id": 19,
+      "id": 22,
       "name": "Fine knit jumper with glitter yarn",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Gray", "Pink"],
       "price": 45.99,
       "pictures": [
@@ -405,9 +468,9 @@
       "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     },
     {
-      "id": 20,
+      "id": 23,
       "name": "Polo shirt with stripes",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Yellow", "Gray"],
       "price": 21.99,
       "pictures": [
@@ -426,9 +489,9 @@
       "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     },
     {
-      "id": 21,
+      "id": 24,
       "name": "Viscose kimono blouse",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Beige", "Black"],
       "price": 34.99,
       "pictures": [
@@ -447,9 +510,9 @@
       "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     },
     {
-      "id": 22,
+      "id": 25,
       "name": "Denim trousers",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Blue", "Black"],
       "price": 69.99,
       "pictures": [
@@ -468,9 +531,9 @@
       "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     },
     {
-      "id": 23,
+      "id": 26,
       "name": "Denim shorts in a vintage look",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Blue", "Black"],
       "price": 25.99,
       "pictures": [
@@ -489,9 +552,9 @@
       "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
     },
     {
-      "id": 24,
+      "id": 27,
       "name": "Blouse with smocked details",
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
       "colors": ["Gray", "Black"],
       "price": 34.99,
       "pictures": [
