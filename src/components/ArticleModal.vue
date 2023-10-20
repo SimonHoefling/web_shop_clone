@@ -1,21 +1,30 @@
 <script setup lang="ts">
-import { defineProps, defineEmits, ref } from 'vue';
+import { defineProps, defineEmits, ref, computed } from 'vue';
 
+// DefineProps: Exposing props from parent component
 const { selectedArticle, selectedImageIndex } = defineProps(['selectedArticle', 'selectedImageIndex']);
+// DefineEmits: Exposing events that can be emitted to the parent component
 const emits = defineEmits(['close', 'showNextImage', 'showPreviousImage']);
 
+// Refs for local component state
 const localSelectedImageIndex = ref(selectedImageIndex);
 const sizes = ref(selectedArticle.sizes);
-const selectedSize = ref('XS');
+const selectedSize = ref(selectedArticle.sizes[0]);
+const selectedColor = ref(selectedArticle.colors[0]);
 
+// Function to update the selected size
 const updateSelectedSize = (size: string) => {
   selectedSize.value = size;
 };
 
+// Function to update the selected color
+const updateSelectedColor = (color: string) => {
+  selectedColor.value = color;
+};
+
 const showNextImage = () => {
-  // Function to show the next image when the right arrow is clicked.
   if (localSelectedImageIndex.value === undefined) {
-    localSelectedImageIndex.value = 0; // Initialize with the first image.
+    localSelectedImageIndex.value = 0;
   } else {
     localSelectedImageIndex.value = (localSelectedImageIndex.value + 1) % selectedArticle.pictures.length;
   }
@@ -23,9 +32,8 @@ const showNextImage = () => {
 };
 
 const showPreviousImage = () => {
-  // Function to show the previous image when the left arrow is clicked.
   if (localSelectedImageIndex.value === undefined) {
-    localSelectedImageIndex.value = selectedArticle.pictures.length - 1; // Initialize with the last image.
+    localSelectedImageIndex.value = selectedArticle.pictures.length - 1;
   } else {
     localSelectedImageIndex.value = (localSelectedImageIndex.value - 1 + selectedArticle.pictures.length) % selectedArticle.pictures.length;
   }
@@ -35,6 +43,18 @@ const showPreviousImage = () => {
 const closeModal = () => {
   emits('close');
 };
+
+// Computed property that maps color names to CSS classes
+const colorClassMap = computed(() => {
+  const colorClasses: { [key: string]: string } = {};
+  const colors = selectedArticle.colors;
+
+  colors.forEach((color: string) => {
+    colorClasses[color] = `color-${color.toLowerCase()}`;
+  });
+
+  return colorClasses;
+});
 </script>
 
 
@@ -46,17 +66,17 @@ const closeModal = () => {
 
       <div class="flex flex-row mt-12">
 
-        <!-- Display article image -->
+        <!-- Left side: Article images -->
         <div class="w-3/5 relative flex items-center justify-center">
           <!-- Left arrow to show previous image -->
-          <div class="arrow left-arrow absolute left-4" @click="showPreviousImage">
+          <div class="arrow left-arrow absolute left-4 cursor-pointer" @click="showPreviousImage">
             <font-awesome-icon :icon="['fas', 'chevron-left']" />
           </div>
 
           <img :src="selectedArticle.pictures[localSelectedImageIndex]" alt="Article Image" />
 
           <!-- Right arrow to show next image -->
-          <div class="arrow right-arrow absolute right-4" @click="showNextImage">
+          <div class="arrow right-arrow absolute right-4 cursor-pointer" @click="showNextImage">
             <font-awesome-icon :icon="['fas', 'chevron-right']" />
           </div>
         </div>
@@ -70,9 +90,19 @@ const closeModal = () => {
             <p class="font-bold mt-4">{{ selectedArticle.price }} €</p>
             <img src="../assets/logo.png" class="w-auto h-10 mt-4" alt="Logo">
           </div>
+
           <hr class="my-4">
-          <p>Color: {{ selectedArticle.colors.join(', ') }}</p>
+
+          <!-- Render colored circles based on the colors -->
+          <p class="mb-2">Color: <strong>{{ selectedColor }}</strong></p>
+          <div class="color-circles cursor-pointer">
+            <span v-for="color in selectedArticle.colors" :key="color"
+              :class="['color-circle', colorClassMap[color], { 'selected': color === selectedColor }]"
+              @click="updateSelectedColor(color)"></span>
+          </div>
+
           <hr class="my-4">
+
           <!-- Size options -->
           <p>Size: <strong>{{ selectedSize }}</strong></p>
           <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mt-2">
@@ -87,17 +117,18 @@ const closeModal = () => {
   </div>
 </template>
 
-
 <style scoped>
 .size-badge {
   background-color: #bcc0c3;
-  /* width: 4rem; */
   border-radius: 99px;
   color: #000000;
-  /* margin: 10px 10px 0 0;  */
   text-align: center;
   cursor: pointer;
   border: 2px solid transparent;
+}
+
+.custom-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .selected-size {
@@ -107,7 +138,60 @@ const closeModal = () => {
   /* Add additional styling for the selected size */
 }
 
-.custom-shadow {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Styling for the color circles below */
+.color-circles {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Define CSS classes for each color */
+.color-black {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.color-blue {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.color-green {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.color-red {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.color-gray {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(167, 160, 160);
+}
+
+/* Classes to add dynamic border styling to the color circles below */
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+/* Add a gray border for the selected color */
+.color-circle.selected {
+  border-color: rgb(106, 104, 104);
 }
 </style>

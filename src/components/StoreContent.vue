@@ -79,7 +79,7 @@ export default {
         endpoint = '/women';
       }
 
-      console.log('StoreContent.vue: Fetching data for endpoint:', endpoint); // Add this line
+      console.log('StoreContent.vue: Fetching data for endpoint:', endpoint);
 
       if (endpoint) {
         import('@/api/apiService').then((module) => {

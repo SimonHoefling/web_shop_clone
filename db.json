@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Knitted jumper with a V-neckline",
       "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Green", "Blue"],
+      "colors": ["Green", "Blue", "Black", "Red", "Gray"],
       "price": 29.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2040666.7210_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -24,8 +24,8 @@
     {
       "id": 2,
       "name": "Knitted jumper with a V-neckline",
-      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Red", "Black"],
+      "sizes": ["XS","S", "XL", "XXL"],
+      "colors": ["Red", "Black", "Green"],
       "price": 29.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2040666.3162_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -45,8 +45,8 @@
     {
       "id": 3,
       "name": "Slim fit: sports jacket in a viscose blend",
-      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Black", "Gray"],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["Black", "Blue"],
       "price": 139.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2137179.9999_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -66,8 +66,8 @@
     {
       "id": 4,
       "name": "Pure cotton knitted jumper",
-      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Gray", "Blue"],
+      "sizes": ["XS","S", "M", "L"],
+      "colors": ["Gray", "Green"],
       "price": 35.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2138544.91W0_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -87,8 +87,8 @@
     {
       "id": 5,
       "name": "Jacket with a stand-up collar",
-      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["White", "Green"],
+      "sizes": ["XS","S", "M", "L", "XXL"],
+      "colors": ["Gray", "Black", "Green"],
       "price": 50.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2109257.8155_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -108,8 +108,8 @@
     {
       "id": 6,
       "name": "Sweatshirt with contrasting seams",
-      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["White", "Blue"],
+      "sizes": ["XS","S", "L", "XL", "XXL"],
+      "colors": ["Gray", "Red", "Blue", "Black"],
       "price": 33.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2125439.94D5_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -129,8 +129,8 @@
     {
       "id": 7,
       "name": "Relaxed fit: Short sleeve shirt with lettering",
-      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Blue", "Black"],
+      "sizes": ["XS", "L", "XL", "XXL"],
+      "colors": ["Blue", "Black", "Green", "Gray"],
       "price": 32.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2131019.54D1_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -150,8 +150,8 @@
     {
       "id": 8,
       "name": "Relaxed fit: Short sleeve shirt with lettering",
-      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Blue", "White"],
+      "sizes": ["M", "L", "XL", "XXL"],
+      "colors": ["Blue", "Gray", "Black", "Green"],
       "price": 32.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2131019.59D1_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -171,8 +171,8 @@
     {
       "id": 9,
       "name": "Regular fit: trousers made of stretch cotton",
-      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["White", "Brown"],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["Gray", "Black"],
       "price": 69.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2143034.98K2_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -192,8 +192,8 @@
     {
       "id": 10,
       "name": "Cardigan with a zip",
-      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Gray", "Black"],
+      "sizes": ["XS","S", "M", "L", "XL"],
+      "colors": ["Gray", "Black", "Blue"],
       "price": 79.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2143025.99X0_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -213,8 +213,8 @@
     {
       "id": 11,
       "name": "Regular fit: linen blend shorts",
-      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["White", "Black"],
+      "sizes": ["XS","S", "M", "XXL"],
+      "colors": ["Blue", "Black", "Gray"],
       "price": 21.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2131609.8000_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -234,8 +234,8 @@
     {
       "id": 12,
       "name": "T-shirt in pure cotton",
-      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Gray", "White"],
+      "sizes": ["M", "L", "XL", "XXL"],
+      "colors": ["Gray", "Black", "Red", "Blue"],
       "price": 13.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2131619.98D0_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -255,8 +255,8 @@
     {
       "id": 13,
       "name": "Linen blend trousers",
-      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Blue", "White"],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "colors": ["Blue", "Red", "Green"],
       "price": 25.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2131600.5852_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -276,8 +276,8 @@
     {
       "id": 14,
       "name": "Oversized T-shirt",
-      "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Blue", "White"],
+      "sizes": ["XS","S", "L", "XL", "XXL"],
+      "colors": ["Blue", "Red"],
       "price": 16.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2119065.59D1_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -298,7 +298,7 @@
       "id": 15,
       "name": "Cotton T-shirt with a front print",
       "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Orange", "White"],
+      "colors": ["Gray", "Green", "Black"],
       "price": 25.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2135646.09D2_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -324,7 +324,7 @@
       "id": 16,
       "name": "Pure cotton tracksuit bottoms",
       "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Black", "Blue"],
+      "colors": ["Black", "Blue", "Red"],
       "price": 51.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2135380.9999_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -345,7 +345,7 @@
       "id": 17,
       "name": "Denim trousers",
       "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Blue", "Black"],
+      "colors": ["Green", "Blue", "Black"],
       "price": 69.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2119155.57Z6_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -366,7 +366,7 @@
       "id": 18,
       "name": "Regular fit: cloth trousers",
       "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Black", "Blue"],
+      "colors": ["Black", "Blue", "Gray"],
       "price": 99.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2136881.5959_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -387,7 +387,7 @@
       "id": 19,
       "name": "Quilted coat with a hood",
       "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Green", "Black"],
+      "colors": ["Green", "Black", "Blue"],
       "price": 169.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2117031.7946_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -408,7 +408,7 @@
       "id": 20,
       "name": "Coat with a stowaway hood",
       "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Black", "Gray"],
+      "colors": ["Black", "Gray", "Blue", "Green"],
       "price": 129.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2120482.9999_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -429,7 +429,7 @@
       "id": 21,
       "name": "T-Shirt",
       "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Black", "Gray"],
+      "colors": ["Black", "Gray", "Blue", "Green"],
       "price": 29.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2140062.9999_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -450,7 +450,7 @@
       "id": 22,
       "name": "Fine knit jumper with glitter yarn",
       "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Gray", "Pink"],
+      "colors": ["Gray", "Blue", "Black"],
       "price": 45.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2137906.9400_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -471,7 +471,7 @@
       "id": 23,
       "name": "Polo shirt with stripes",
       "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Yellow", "Gray"],
+      "colors": ["Gray", "Black", "Red"],
       "price": 21.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2113882.15G0_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -492,7 +492,7 @@
       "id": 24,
       "name": "Viscose kimono blouse",
       "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Beige", "Black"],
+      "colors": ["Green", "Black", "Red"],
       "price": 34.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2122467.80A1_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -534,7 +534,7 @@
       "id": 26,
       "name": "Denim shorts in a vintage look",
       "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Blue", "Black"],
+      "colors": ["Blue", "Black", "Gray"],
       "price": 25.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2113439.55Y4_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
@@ -555,7 +555,7 @@
       "id": 27,
       "name": "Blouse with smocked details",
       "sizes": ["XS","S", "M", "L", "XL", "XXL"],
-      "colors": ["Gray", "Black"],
+      "colors": ["Gray", "Black", "Red", "Blue", "Green"],
       "price": 34.99,
       "pictures": [
         "https://media.soliver.com/i/soliver/2119619.99A0_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=1800",
