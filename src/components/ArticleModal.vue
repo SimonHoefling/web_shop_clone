@@ -85,6 +85,7 @@ const colorClassMap = computed(() => {
       <font-awesome-icon @click="closeModal" class="cursor-pointer absolute top-4 right-4 text-black text-2xl"
         icon="times"></font-awesome-icon>
 
+      <!-- Top section (image + details) -->
       <div class="flex flex-col md:flex-row my-12 p-4">
 
         <!-- Left side: Article images -->
@@ -129,7 +130,7 @@ const colorClassMap = computed(() => {
 
           <!-- Size options -->
           <p>Size: <strong>{{ selectedSize }}</strong></p>
-          <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mt-2">
+          <div class="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-4 mt-2">
             <p v-for="size in sizes" :key="size" @click="updateSelectedSize(size)" class="size-badge sm:w-12 md:w-12"
               :class="{ 'selected-size': size === selectedSize }">
               {{ size }}
@@ -138,11 +139,7 @@ const colorClassMap = computed(() => {
         </div>
       </div>
 
-
-
-
-
-      <!-- List section -->
+      <!-- Bottom section (more details) -->
       <div class="details-list bg-gray-200 p-4">
         <ul class="flex flex-row">
           <strong>
@@ -164,30 +161,81 @@ const colorClassMap = computed(() => {
       </div>
 
 
-
-
-
-
-
-
       <!-- Render the content based on the selected item -->
       <div class="content bg-gray-200 h-112 p-4">
 
+        <!-- Details tab -->
         <div v-if="selectedTab === 'DETAILS'">
+          <p class="mb-4"><strong>Product details</strong></p>
           <ul>
             <li v-for="detail in selectedArticle.details" :key="detail">{{ detail }}</li>
           </ul>
+          <div class="flex flex-row mt-4">
+            <img src="../assets/barcode.png" class="w-auto h-10" alt="Logo">
+            <div class="ml-2">
+              <p>2154732.57D1.S</p>
+              <p>4099975524103</p>
+            </div>
+          </div>
         </div>
 
+        <!-- Fit tab -->
         <div v-else-if="selectedTab === 'FIT'">
-          <p><strong>FIT:</strong></p>
-          <p>{{ selectedArticle.fit }}</p>
+          <p class="mb-4"><strong>FIT:</strong></p>
+          <ul>
+            <li v-for="fitDetail in selectedArticle.fit" :key="fitDetail">{{ fitDetail }}</li>
+          </ul>
         </div>
 
+        <!-- Material & Care tab -->
         <div v-else-if="selectedTab === 'MATERIAL CARE'">
-          <p>{{ selectedArticle.material_care }}</p>
+          <div class="flex flex-row justify-between w-full">
+            <div class="mb-4 w-1/2">
+              <p class="mb-2"><strong>Material</strong></p>
+              <p>Fabric: chambray</p>
+              <p>Quality: lightweight</p>
+            </div>
+            <div class="w-1/2">
+              <p class="mb-2"><strong>Material composition</strong></p>
+              <p>99% Cotton, 1% Elastane</p>
+            </div>
+          </div>
+
+          <div class="my-4 w-5/5 h-0.5 shadow"></div>
+
+          <p><strong>Care instructions</strong></p>
+          <div class="flex flex-row justify-between my-4 w-full">
+
+            <div class="w-1/2">
+              <div class="flex flex-row items-center mb-4">
+                <img src="../assets/wash-icon.png" class="w-auto h-6 mr-8" alt="wash icon">
+                <p>Machine wash 40°</p>
+              </div>
+              <div class="flex flex-row items-center mb-4">
+                <img src="../assets/chlore.png" class="w-auto h-6 mr-8" alt="chlore danger icon">
+                <p>Do not chlore</p>
+              </div>
+              <div class="flex flex-row items-center mb-4">
+                <img src="../assets/iron-icon.png" class="w-auto h-6 mr-8" alt="iron icon">
+                <p>Handwarm ironing</p>
+              </div>
+            </div>
+
+            <div class="w-1/2">
+              <div class="flex flex-row items-center mb-4">
+                <img src="../assets/cleaning-icon.png" class="w-auto h-6 mr-8" alt="cleaning icon">
+                <p>No dry cleaning</p>
+              </div>
+              <div class="flex flex-row items-center mb-4">
+                <img src="../assets/machine.png" class="w-auto h-6 mr-8" alt="washing machine icon">
+                <p>Tumble with reduced thermical pressure</p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
+        <!-- Sustainability tab -->
         <div v-else-if="selectedTab === 'SUSTAINABILITY'" class="w-2/3">
           <p class="mb-4">{{ selectedArticle.sustainability[0] }}</p>
           <div class="w-full h-0.5 shadow"></div>
@@ -199,20 +247,12 @@ const colorClassMap = computed(() => {
           <p class="mt-2">
             This product supports economically, ecologically and socially sustainable cotton farming.
             The sourcing of sustainable cotton follows the principle of mass balance. You can find more information
-            <router-link to="#" class="underline">here.</router-link>
+            <a href="https://soliver.eu" class="underline" target="blank">here.</a>
           </p>
 
 
         </div>
       </div>
-
-
-
-
-
-
-
-
 
     </div>
   </div>

@@ -17,7 +17,7 @@
         "Sleeves : long sleeves",
         "Details : logo"
       ],
-      "fit": "Fit : Regular Fit",
+      "fit": ["Fit : Regular Fit", "Back length : approx. 72 cm in size L"],
       "material_care": "100% Cotton. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -41,7 +41,7 @@
         "Button fly closure",
         "Straight leg fit"
       ],
-      "fit": "Regular fit",
+      "fit": ["Regular fit", "Back length : approx. 72 cm in size L"],
       "material_care": "99% Cotton, 1% Elastane. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -65,7 +65,7 @@
         "Fastener : buttons",
         "Pockets : inside pocket"
       ],
-      "fit": "Fit : Slim Fit",
+      "fit": ["Fit : Slim Fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Polyester and cotton blend. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -89,7 +89,7 @@
         "Neckline : crew neck",
         "Style : In a casual look"
       ],
-      "fit": "Fit : Regular Fit",
+      "fit": ["Fit : Regular Fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Fabric : cotton",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -113,7 +113,7 @@
         "Collar : stand-up collar",
         "Sleeves : ribbed cuffs"
       ],
-      "fit": "Regular fit",
+      "fit": ["Regular fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Polyester. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -137,7 +137,7 @@
         "Neckline : crew neck",
         "Style : in a casual look"
       ],
-      "fit": "Regular fit",
+      "fit": ["Regular fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Cotton blend. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -161,7 +161,7 @@
         "Print : front print",
         "Details : artwork"
       ],
-      "fit": "Regular fit",
+      "fit": ["Regular fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Leather and synthetic. Wipe clean.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -185,7 +185,7 @@
         "Ribbed collar and cuffs",
         "Details : artwork"
       ],
-      "fit": "Regular fit",
+      "fit": ["Regular fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Cotton. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -209,7 +209,7 @@
         "Pockets : slit pocket",
         "Waistband : with belt loops"
       ],
-      "fit": "Regular fit",
+      "fit": ["Regular fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Cotton. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -233,7 +233,7 @@
         "Collar : stand-up collar",
         "Sleeves : long sleeves"
       ],
-      "fit": "Regular fit",
+      "fit": ["Regular fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Polyester. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -257,7 +257,7 @@
         "Fastener : button",
         "Pockets : slit pocket"
       ],
-      "fit": "Regular fit",
+      "fit": ["Regular fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Fabric : linen blend",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -281,7 +281,7 @@
         "Print : front print",
         "Neckline : crew neck"
       ],
-      "fit": "Regular fit",
+      "fit": ["Regular fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Fabric : linen blend",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -305,7 +305,7 @@
         "Pockets : patch pocket",
         "Waistband : elasticated waistband"
       ],
-      "fit": "Fit : Regular Fit",
+      "fit": ["Fit : Regular Fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Fabric : linen blend",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -329,7 +329,7 @@
         "Details : logo appliqué",
         "Style : in a casual look"
       ],
-      "fit": "Fit : Relaxed Fit",
+      "fit": ["Fit : Relaxed Fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Fabric : cotton",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -353,7 +353,7 @@
         "Sleeves : short sleeves",
         "Neckline : crew neck"
       ],
-      "fit": "Regular fit",
+      "fit": ["Regular fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Fabric : cotton",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -382,7 +382,7 @@
         "Waistband : elasticated waistband",
         "Style : in a casual look"
       ],
-      "fit": "Fit : Relaxed Fit",
+      "fit": ["Fit : Relaxed Fit", "Back length : approx. 72 cm in size L"],
       "material_care": "100% Cotton. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -406,7 +406,7 @@
         "Fastener : button",
         "Details : distressed effects"
       ],
-      "fit": "Fit : Skinny fit",
+      "fit": ["Fit : Skinny fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Fabric : denim",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -430,7 +430,7 @@
         "Fastener : zip",
         "Pockets : slit pocket"
       ],
-      "fit": "Rise : High rise",
+      "fit": ["Rise : High rise", "Back length : approx. 72 cm in size L"],
       "material_care": "Fabric : woven fabric",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -454,7 +454,7 @@
         "Hood : With a drawstring panel",
         "Sleeves : long sleeves"
       ],
-      "fit": "Fit : Regular Fit",
+      "fit": ["Fit : Regular Fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Outer fabric: 100% Polyester; Lining: 100% Polyester",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -478,7 +478,7 @@
         "Collar : stand-up collar",
         "Fastener : two-way zip"
       ],
-      "fit": "Regular fit",
+      "fit": ["Regular fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Fabric : woven fabric",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -502,7 +502,7 @@
         "astener : open-fronted",
         "Sleeves : long sleeves"
       ],
-      "fit": "Fit : Slim Fit",
+      "fit": ["Fit : Slim Fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Polyester. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -526,7 +526,7 @@
         "Neckline : neckline with a ribbed trim",
         "Sleeves : long sleeves"
       ],
-      "fit": "Regular fit",
+      "fit": ["Regular fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Polyester. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -550,7 +550,7 @@
         "Collar : polo collar",
         "Sleeves : dropped shoulders"
       ],
-      "fit": "Fit : Loose Fit",
+      "fit": ["Fit : Loose Fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Fabric : cotton",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -574,7 +574,7 @@
         "Fastener : open-fronted",
         "Sleeves : 3/4-length sleeves"
       ],
-      "fit": "Fit : Loose Fit",
+      "fit": ["Fit : Loose Fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Polyester. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -598,7 +598,7 @@
         "Pockets : five-pocket design",
         "Waistband : with belt loops"
       ],
-      "fit": "Fit : regular",
+      "fit": ["Fit : regular", "Back length : approx. 72 cm in size L"],
       "material_care": "Polyester. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -622,7 +622,7 @@
         "Waistband : elasticated waistband",
         "Occasion : Casual"
       ],
-      "fit": "Fit : Regular Fit",
+      "fit": ["Fit : Regular Fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Polyester. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
@@ -646,7 +646,7 @@
         "Neckline : V-neckline",
         "Sleeves : wide sleeves"
       ],
-      "fit": "Fit : Regular Fit",
+      "fit": ["Fit : Regular Fit", "Back length : approx. 72 cm in size L"],
       "material_care": "Polyester. Machine washable.",
       "sustainability": [
         "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
