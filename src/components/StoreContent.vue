@@ -127,16 +127,15 @@ export default {
       <div class="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 my-4 h-full">
         <div class="item relative" v-for="(item, index) in apiData" :key="index">
           <div class="image-container" @click="openModal(item, selectedImages[index])">
-            <img v-lazy="item.pictures[selectedImages[index]]" data-src=""
-              class="bg-gray-200 h-128 cursor-pointer object-contain" />
+            <img :src="item.pictures[selectedImages[index]]" class="bg-gray-200 h-128 cursor-pointer object-contain" />
           </div>
           <div class="absolute top-0 right-0 flex flex-col p-2">
             <font-awesome-icon :icon="['fas', 'heart']" class="text-black cursor-pointer mb-2" style="font-size: 20px;" />
             <font-awesome-icon :icon="['fas', 'bag-shopping']" class="text-black cursor-pointer mb-2"
               style="font-size: 20px;" />
           </div>
-          <p v-lazy="item.name">{{ item.name }}</p>
-          <p v-lazy="item.price">{{ item.price }} €</p>
+          <p>{{ item.name }}</p>
+          <p>{{ item.price }} €</p>
         </div>
       </div>
 
