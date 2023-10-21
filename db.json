@@ -19,7 +19,10 @@
       ],
       "fit": "Fit : Regular Fit",
       "material_care": "100% Cotton. Machine washable.",
-      "sustainability": "Eco-friendly materials and production process."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 2,
@@ -40,7 +43,10 @@
       ],
       "fit": "Regular fit",
       "material_care": "99% Cotton, 1% Elastane. Machine washable.",
-      "sustainability": "Sustainably sourced cotton."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 3,
@@ -61,7 +67,10 @@
       ],
       "fit": "Fit : Slim Fit",
       "material_care": "Polyester and cotton blend. Machine washable.",
-      "sustainability": "Recycled materials used."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 4,
@@ -82,7 +91,10 @@
       ],
       "fit": "Fit : Regular Fit",
       "material_care": "Fabric : cotton",
-      "sustainability": "Ethically made."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 5,
@@ -103,7 +115,10 @@
       ],
       "fit": "Regular fit",
       "material_care": "Polyester. Machine washable.",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 6,
@@ -124,7 +139,10 @@
       ],
       "fit": "Regular fit",
       "material_care": "Cotton blend. Machine washable.",
-      "sustainability": "Sustainable cotton used."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 7,
@@ -145,7 +163,10 @@
       ],
       "fit": "Regular fit",
       "material_care": "Leather and synthetic. Wipe clean.",
-      "sustainability": "Eco-friendly materials."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 8,
@@ -166,7 +187,10 @@
       ],
       "fit": "Regular fit",
       "material_care": "Cotton. Machine washable.",
-      "sustainability": "Sustainable cotton."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 9,
@@ -187,7 +211,10 @@
       ],
       "fit": "Regular fit",
       "material_care": "Cotton. Machine washable.",
-      "sustainability": "Sustainably sourced cotton."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 10,
@@ -208,7 +235,10 @@
       ],
       "fit": "Regular fit",
       "material_care": "Polyester. Machine washable.",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 11,
@@ -229,7 +259,10 @@
       ],
       "fit": "Regular fit",
       "material_care": "Fabric : linen blend",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 12,
@@ -250,7 +283,10 @@
       ],
       "fit": "Regular fit",
       "material_care": "Fabric : linen blend",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 13,
@@ -271,7 +307,10 @@
       ],
       "fit": "Fit : Regular Fit",
       "material_care": "Fabric : linen blend",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 14,
@@ -292,7 +331,10 @@
       ],
       "fit": "Fit : Relaxed Fit",
       "material_care": "Fabric : cotton",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 15,
@@ -313,7 +355,10 @@
       ],
       "fit": "Regular fit",
       "material_care": "Fabric : cotton",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     }
   ],
 
@@ -339,7 +384,10 @@
       ],
       "fit": "Fit : Relaxed Fit",
       "material_care": "100% Cotton. Machine washable.",
-      "sustainability": "Quality : high-quality"
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 17,
@@ -360,7 +408,10 @@
       ],
       "fit": "Fit : Skinny fit",
       "material_care": "Fabric : denim",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 18,
@@ -381,7 +432,10 @@
       ],
       "fit": "Rise : High rise",
       "material_care": "Fabric : woven fabric",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 19,
@@ -402,7 +456,10 @@
       ],
       "fit": "Fit : Regular Fit",
       "material_care": "Outer fabric: 100% Polyester; Lining: 100% Polyester",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 20,
@@ -423,7 +480,10 @@
       ],
       "fit": "Regular fit",
       "material_care": "Fabric : woven fabric",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 21,
@@ -444,7 +504,10 @@
       ],
       "fit": "Fit : Slim Fit",
       "material_care": "Polyester. Machine washable.",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 22,
@@ -465,7 +528,10 @@
       ],
       "fit": "Regular fit",
       "material_care": "Polyester. Machine washable.",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 23,
@@ -486,7 +552,10 @@
       ],
       "fit": "Fit : Loose Fit",
       "material_care": "Fabric : cotton",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 24,
@@ -507,7 +576,10 @@
       ],
       "fit": "Fit : Loose Fit",
       "material_care": "Polyester. Machine washable.",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 25,
@@ -528,7 +600,10 @@
       ],
       "fit": "Fit : regular",
       "material_care": "Polyester. Machine washable.",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 26,
@@ -549,7 +624,10 @@
       ],
       "fit": "Fit : Regular Fit",
       "material_care": "Polyester. Machine washable.",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     },
     {
       "id": 27,
@@ -570,7 +648,10 @@
       ],
       "fit": "Fit : Regular Fit",
       "material_care": "Polyester. Machine washable.",
-      "sustainability": "To contribute to the recycling principle in textile production, we`re increasing the amount of recycled fibre materials in our products."
+      "sustainability": [
+        "WE CARE: Items with other sustainable properties that go beqond our inimum standards are marked with the WE CARE label.",
+        "When it comes to certified sustainable fibres, we're committed to using natural fibres from renewable sources. The raw materials are cultivated via resource-saving methods."
+      ]
     }
   ]
 }

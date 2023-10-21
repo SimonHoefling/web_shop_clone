@@ -12,6 +12,7 @@ const sizes = ref(selectedArticle.sizes);
 const selectedSize = ref(selectedArticle.sizes[0]);
 const selectedColor = ref(selectedArticle.colors[0]);
 const numPictures = computed(() => selectedArticle.pictures.length);
+const selectedTab = ref('DETAILS'); // Sets the default tab o the bottom to details
 
 
 // Function to update the selected size
@@ -46,6 +47,25 @@ const closeModal = () => {
   emits('close');
 };
 
+// Next 4 functions are the the list at the bottom to show the details of the differnt tabs
+const showDetails = () => {
+  selectedTab.value = 'DETAILS';
+};
+
+const showFit = () => {
+  selectedTab.value = 'FIT';
+};
+
+const showMaterialCare = () => {
+  selectedTab.value = 'MATERIAL CARE';
+};
+
+const showSustainability = () => {
+  selectedTab.value = 'SUSTAINABILITY';
+};
+
+
+
 // Computed property that maps color names to CSS classes
 const colorClassMap = computed(() => {
   const colorClasses: { [key: string]: string } = {};
@@ -61,12 +81,11 @@ const colorClassMap = computed(() => {
 
 <template>
   <div class="modal fixed top-0 left-0 w-full h-full flex items-center justify-center z-50">
-    <div
-      class="modal-content bg-white w-11/12 md:w-3/4 lg:w-1/2 mt-4 max-h-full overflow-y-auto p-4 relative custom-shadow">
+    <div class="modal-content bg-white w-11/12 md:w-3/4 lg:w-1/2 mt-4 max-h-full overflow-y-auto relative custom-shadow">
       <font-awesome-icon @click="closeModal" class="cursor-pointer absolute top-4 right-4 text-black text-2xl"
         icon="times"></font-awesome-icon>
 
-      <div class="flex flex-col md:flex-row mt-12">
+      <div class="flex flex-col md:flex-row my-12 p-4">
 
         <!-- Left side: Article images -->
         <div class="w-full md:w-3/5 relative flex items-center justify-center">
@@ -118,6 +137,83 @@ const colorClassMap = computed(() => {
           </div>
         </div>
       </div>
+
+
+
+
+
+      <!-- List section -->
+      <div class="details-list bg-gray-200 p-4">
+        <ul class="flex flex-row">
+          <strong>
+            <li class="cursor-pointer mr-6" @click="showDetails" :class="{ 'active': selectedTab === 'DETAILS' }">DETAILS
+            </li>
+          </strong>
+          <strong>
+            <li class="cursor-pointer mr-6" @click="showFit" :class="{ 'active': selectedTab === 'FIT' }">FIT</li>
+          </strong>
+          <strong>
+            <li class="cursor-pointer mr-6" @click="showMaterialCare"
+              :class="{ 'active': selectedTab === 'MATERIAL CARE' }">MATERIAL & CARE</li>
+          </strong>
+          <strong>
+            <li class="cursor-pointer mr-6" @click="showSustainability"
+              :class="{ 'active': selectedTab === 'SUSTAINABILITY' }">SUSTAINABILITY</li>
+          </strong>
+        </ul>
+      </div>
+
+
+
+
+
+
+
+
+      <!-- Render the content based on the selected item -->
+      <div class="content bg-gray-200 h-112 p-4">
+
+        <div v-if="selectedTab === 'DETAILS'">
+          <ul>
+            <li v-for="detail in selectedArticle.details" :key="detail">{{ detail }}</li>
+          </ul>
+        </div>
+
+        <div v-else-if="selectedTab === 'FIT'">
+          <p><strong>FIT:</strong></p>
+          <p>{{ selectedArticle.fit }}</p>
+        </div>
+
+        <div v-else-if="selectedTab === 'MATERIAL CARE'">
+          <p>{{ selectedArticle.material_care }}</p>
+        </div>
+
+        <div v-else-if="selectedTab === 'SUSTAINABILITY'" class="w-2/3">
+          <p class="mb-4">{{ selectedArticle.sustainability[0] }}</p>
+          <div class="w-full h-0.5 shadow"></div>
+          <div class="flex items-center justify-start my-4">
+            <img src="../assets/shirt.png" class="w-auto h-10" alt="Logo">
+            <p class="ml-2"><strong>CERTIFIED SUSTAINABLE FIBRE</strong></p>
+          </div>
+          <p>{{ selectedArticle.sustainability[1] }}</p>
+          <p class="mt-2">
+            This product supports economically, ecologically and socially sustainable cotton farming.
+            The sourcing of sustainable cotton follows the principle of mass balance. You can find more information
+            <router-link to="#" class="underline">here.</router-link>
+          </p>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
     </div>
   </div>
 </template>
@@ -217,5 +313,12 @@ const colorClassMap = computed(() => {
 
 .indicator.active {
   background-color: #333;
+}
+
+
+
+
+.active {
+  border-bottom: 2px solid #000000;
 }
 </style>
