@@ -38,27 +38,6 @@ export default {
     };
   },
   methods: {
-    showNextImage(articleIndex: number) {
-      // Function to show the next image when the right arrow is clicked.
-      if (this.selectedImages[articleIndex] === undefined) {
-        // If no image is selected, set the first image (index 0).
-        this.selectedImages[articleIndex] = 0;
-      } else {
-        // Cycle to the next image, looping back to 0 when at the end.
-        this.selectedImages[articleIndex] = (this.selectedImages[articleIndex] + 1) % this.apiData[articleIndex].pictures.length;
-      }
-    },
-    showPreviousImage(articleIndex: number) {
-      // Function to show the previous image when the left arrow is clicked.
-      if (this.selectedImages[articleIndex] === undefined) {
-        // If no image is selected, set the last image (index equal to the number of pictures - 1).
-        this.selectedImages[articleIndex] = this.apiData[articleIndex].pictures.length - 1;
-      } else {
-        // Cycle to the previous image, looping to the last image when at the beginning.
-        this.selectedImages[articleIndex] = (this.selectedImages[articleIndex] - 1 + this.apiData[articleIndex].pictures.length) % this.apiData[articleIndex].pictures.length;
-      }
-    },
-
     openModal(article: YourDataType, imageIndex: number) {
       console.log('Opening modal')
       this.selectedArticle = article;
@@ -137,7 +116,8 @@ export default {
         <p class="text-3xl">Clothing</p>
         <p class="italic text-xs text-gray-400 ml-2 mb-1">({{ productsCount }} Products)</p>
       </div>
-      <p class="text-xs lg:mb-8 max-w-full lg:max-w-[50%]">Find your style – with our looks. From business classics like tailored
+      <p class="text-xs lg:mb-8 max-w-full lg:max-w-[50%]">Find your style – with our looks. From business classics like
+        tailored
         jackets and
         shirts to casual pieces such as
         hoodies and tracksuit bottoms: Be inspired by our designs and find outfits that are perfect for you.
@@ -146,22 +126,17 @@ export default {
       <!-- Articles grid -->
       <div class="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 my-4 h-full">
         <div class="item relative" v-for="(item, index) in apiData" :key="index">
-          <div class="arrow left-arrow" @click="showPreviousImage(index)">
-            <font-awesome-icon :icon="['fas', 'chevron-left']" />
-          </div>
-          <div class="arrow right-arrow" @click="showNextImage(index)">
-            <font-awesome-icon :icon="['fas', 'chevron-right']" />
-          </div>
           <div class="image-container" @click="openModal(item, selectedImages[index])">
-            <img :src="item.pictures[selectedImages[index]]" class="bg-gray-200 h-128 cursor-pointer object-contain" />
+            <img v-lazy="item.pictures[selectedImages[index]]" data-src=""
+              class="bg-gray-200 h-128 cursor-pointer object-contain" />
           </div>
           <div class="absolute top-0 right-0 flex flex-col p-2">
             <font-awesome-icon :icon="['fas', 'heart']" class="text-black cursor-pointer mb-2" style="font-size: 20px;" />
             <font-awesome-icon :icon="['fas', 'bag-shopping']" class="text-black cursor-pointer mb-2"
               style="font-size: 20px;" />
           </div>
-          <p>{{ item.name }}</p>
-          <p>{{ item.price }} €</p>
+          <p v-lazy="item.name">{{ item.name }}</p>
+          <p v-lazy="item.price">{{ item.price }} €</p>
         </div>
       </div>
 
