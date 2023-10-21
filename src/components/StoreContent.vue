@@ -137,14 +137,14 @@ export default {
         <p class="text-3xl">Clothing</p>
         <p class="italic text-xs text-gray-400 ml-2 mb-1">({{ productsCount }} Products)</p>
       </div>
-      <p class="text-xs max-w-full lg:max-w-[50%]">Find your style – with our looks. From business classics like tailored
+      <p class="text-xs lg:mb-8 max-w-full lg:max-w-[50%]">Find your style – with our looks. From business classics like tailored
         jackets and
         shirts to casual pieces such as
         hoodies and tracksuit bottoms: Be inspired by our designs and find outfits that are perfect for you.
       </p>
 
       <!-- Articles grid -->
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-32 my-4 h-full">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 my-4 h-full">
         <div class="item relative" v-for="(item, index) in apiData" :key="index">
           <div class="arrow left-arrow" @click="showPreviousImage(index)">
             <font-awesome-icon :icon="['fas', 'chevron-left']" />
