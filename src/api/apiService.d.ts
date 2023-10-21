@@ -1,6 +1,5 @@
 // src/api/apiService.d.ts
 declare module '@/api/apiService' {
-  // import axios from 'axios';
 
   export function fetchApiData(endpoint: string): Promise<{ data: YourDataType[] }>;
 
