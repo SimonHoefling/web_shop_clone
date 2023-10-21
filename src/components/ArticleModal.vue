@@ -80,7 +80,7 @@ const colorClassMap = computed(() => {
 </script>
 
 <template>
-  <div class="modal fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 min-h-screen">
+  <div class="modal fixed top-0 left-0 w-full h-full flex items-center justify-center min-h-screen">
     <div class="modal-content bg-white w-11/12 md:w-3/4 lg:w-1/2 max-h-full overflow-y-auto relative custom-shadow">
       <font-awesome-icon @click="closeModal" class="cursor-pointer absolute top-4 right-4 text-black text-2xl"
         icon="times"></font-awesome-icon>
@@ -253,13 +253,8 @@ const colorClassMap = computed(() => {
         </div>
       </div>
 
-
-
-
-
-
       <!-- Footer -->
-      <div class="flex flex-row justify-between items-center px-8 py-2  w-full bg-white sticky bottom-0 custom-footer-shadow">
+      <div class="flex flex-row justify-between items-center px-8  w-full bg-white sticky bottom-0 custom-footer-shadow">
         <p>{{ selectedArticle.name }}</p>
         <button class="bg-black text-white w-60 m-2 p-2">
           <span class="flex items-center justify-between">
@@ -270,17 +265,18 @@ const colorClassMap = computed(() => {
         </button>
       </div>
 
-
-
-
-
-
-
     </div>
   </div>
 </template>
 
 <style scoped>
+.modal-content {
+  height: 94vh;
+  margin: auto;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
 .size-badge {
   background-color: #bcc0c3;
   border-radius: 99px;
@@ -384,5 +380,4 @@ const colorClassMap = computed(() => {
 .custom-footer-shadow {
   box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
 }
-
 </style>
