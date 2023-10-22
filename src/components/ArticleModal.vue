@@ -139,9 +139,20 @@ const colorClassMap = computed(() => {
         </div>
       </div>
 
-      <!-- Bottom section (more details) -->
+      <!-- Bottom tabs section for more details -->
       <div class="details-list bg-gray-200 p-4">
-        <ul class="flex flex-row">
+          <!-- Mobile dropdown -->
+        <div class="md:hidden">
+          <select v-model="selectedTab" class="block w-full bg-white border border-gray p-2 rounded focus:border-gray-500 focus:outline-none focus:ring-0">
+            <option value="DETAILS">DETAILS</option>
+            <option value="FIT">FIT</option>
+            <option value="MATERIAL CARE">MATERIAL & CARE</option>
+            <option value="SUSTAINABILITY">SUSTAINABILITY</option>
+          </select>
+        </div>
+
+        <!-- Desktop tabs -->
+        <ul class="hidden md:flex flex-row">
           <strong>
             <li class="cursor-pointer mr-6" @click="showDetails" :class="{ 'active': selectedTab === 'DETAILS' }">DETAILS
             </li>
@@ -161,7 +172,7 @@ const colorClassMap = computed(() => {
       </div>
 
       <!-- Tab section: Render the content based on the selected item -->
-      <div class="content bg-gray-200 h-96 p-4">
+      <div class="content bg-gray-200 md:h-118 sm:h-auto p-4">
 
         <!-- Details tab -->
         <div v-if="selectedTab === 'DETAILS'">
@@ -254,9 +265,9 @@ const colorClassMap = computed(() => {
       </div>
 
       <!-- Footer -->
-      <div class="flex flex-row justify-between items-center px-8  w-full bg-white sticky bottom-0 custom-footer-shadow">
+      <div class="flex flex-row justify-between items-center px-4  w-full bg-white sticky bottom-0 custom-footer-shadow">
         <p>{{ selectedArticle.name }}</p>
-        <button class="bg-black text-white w-60 m-2 p-2">
+        <button class="bg-black text-white w-60 m-2 mr-0 p-2">
           <span class="flex items-center justify-between">
             <span>Add to cart</span>
             <span class="ml-2"><font-awesome-icon :icon="['fas', 'bag-shopping']" style="color: #ffffff;" /></span>
