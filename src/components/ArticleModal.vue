@@ -245,7 +245,7 @@ const colorClassMap = computed(() => {
         </div>
 
         <!-- Sustainability tab -->
-        <div v-else-if="selectedTab === 'SUSTAINABILITY'" class="w-2/3">
+        <div v-else-if="selectedTab === 'SUSTAINABILITY'" class="md:w-2/3 ">
           <p class="mb-4">{{ selectedArticle.sustainability[0] }}</p>
           <div class="w-full h-0.5 shadow"></div>
           <div class="flex items-center justify-start my-4">
