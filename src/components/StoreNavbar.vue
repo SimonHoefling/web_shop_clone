@@ -2,20 +2,22 @@
 export default {
   data() {
     return {
+      // Data properties for the states
       isDropdownOpen: false,
       selectedGender: 'men',
     };
   },
   methods: {
+    // Method to toggle the dropdown menu's visibility
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;
     },
+    // Method to select a gender and emit an event to notify the parent component
     selectGender(gender: string) {
       this.selectedGender = gender;
-      this.$emit('update:selectedGender', gender); // Emit the event with the correct name
-      this.isDropdownOpen = false; // Close the dropdown after selection
+      this.$emit('update:selectedGender', gender);
+      this.isDropdownOpen = false;
     }
-
   }
 };
 </script>
@@ -23,6 +25,7 @@ export default {
 <template>
   <nav class="text-black p-4 flex justify-between items-center">
     <div class="relative md:hidden" @click="toggleDropdown">
+      <!-- Dropdown toggle button -->
       <button>
         <font-awesome-icon :icon="['fas', 'bars']" style="color: #000000; font-size: 1.5rem;" />
       </button>
@@ -41,16 +44,19 @@ export default {
       </div>
     </div>
 
+    <!-- Desktop left side navigation -->
     <div class="hidden md:flex space-x-4">
-      <router-link to="#" @click="selectGender('women')" :class="{ 'active': selectedGender === 'women' }">WOMAN</router-link>
+      <router-link to="#" @click="selectGender('women')"
+        :class="{ 'active': selectedGender === 'women' }">WOMAN</router-link>
       <router-link to="#" @click="selectGender('men')" :class="{ 'active': selectedGender === 'men' }">MAN</router-link>
     </div>
 
-
+    <!-- Logo -->
     <div class="flex items-center justify-center md:justify-start">
       <img src="../assets/logo.png" class="w-32 h-auto" alt="Logo">
     </div>
 
+    <!-- Desktop right side navigation -->
     <div class="hidden md:flex space-x-4">
       <router-link to="#" class="nav-item">
         <font-awesome-icon :icon="['fas', 'globe']" style="color: #000000; font-size: 1.5rem;" />
@@ -81,9 +87,9 @@ nav {
 /* Breakpoint for phonescreens */
 @media (max-width: 640px) {
   nav {
-  width: calc(100% - 2rem);
-  margin: 0 auto;
-}
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+  }
 }
 
 .nav-item {

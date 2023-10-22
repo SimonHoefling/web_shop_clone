@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps, defineEmits, ref, computed } from 'vue';
 
-// DefineProps: Exposing props from parent component
+// DefineProps: Exposing props from the parent component
 const { selectedArticle, selectedImageIndex } = defineProps(['selectedArticle', 'selectedImageIndex']);
 // DefineEmits: Exposing events that can be emitted to the parent component
 const emits = defineEmits(['close', 'showNextImage', 'showPreviousImage']);
@@ -12,8 +12,7 @@ const sizes = ref(selectedArticle.sizes);
 const selectedSize = ref(selectedArticle.sizes[0]);
 const selectedColor = ref(selectedArticle.colors[0]);
 const numPictures = computed(() => selectedArticle.pictures.length);
-const selectedTab = ref('DETAILS'); // Sets the default tab o the bottom to details
-
+const selectedTab = ref('DETAILS'); // Sets the default tab on the bottom to details
 
 // Function to update the selected size
 const updateSelectedSize = (size: string) => {
@@ -47,7 +46,7 @@ const closeModal = () => {
   emits('close');
 };
 
-// Next 4 functions are the the list at the bottom to show the details of the differnt tabs
+// The next 4 functions are for the list at the bottom to show the details of different tabs
 const showDetails = () => {
   selectedTab.value = 'DETAILS';
 };
@@ -64,8 +63,6 @@ const showSustainability = () => {
   selectedTab.value = 'SUSTAINABILITY';
 };
 
-
-
 // Computed property that maps color names to CSS classes
 const colorClassMap = computed(() => {
   const colorClasses: { [key: string]: string } = {};
@@ -78,6 +75,7 @@ const colorClassMap = computed(() => {
   return colorClasses;
 });
 </script>
+
 
 <template>
   <div class="modal fixed top-0 left-0 w-full h-full flex items-center justify-center min-h-screen">
@@ -141,9 +139,10 @@ const colorClassMap = computed(() => {
 
       <!-- Bottom tabs section for more details -->
       <div class="details-list bg-gray-200 p-4">
-          <!-- Mobile dropdown -->
+        <!-- Mobile dropdown -->
         <div class="md:hidden">
-          <select v-model="selectedTab" class="block w-full bg-white border border-gray p-2 rounded focus:border-gray-500 focus:outline-none focus:ring-0">
+          <select v-model="selectedTab"
+            class="block w-full bg-white border border-gray p-2 rounded focus:border-gray-500 focus:outline-none focus:ring-0">
             <option value="DETAILS">DETAILS</option>
             <option value="FIT">FIT</option>
             <option value="MATERIAL CARE">MATERIAL & CARE</option>

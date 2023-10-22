@@ -1,11 +1,11 @@
 <script lang="ts">
 import type { YourDataType } from '@/api/apiService';
-import ArticleModal from './ArticleModal.vue'; // Import the modal component
+import ArticleModal from './ArticleModal.vue';
 
 export default {
-  props: ['selectedGender'],  // SelectedGender prop from the Navbar component.
+  props: ['selectedGender'],  // Prop to receive the selected gender from the Navbar
   components: {
-    ArticleModal, // Register the ArticleModal component here.
+    ArticleModal,
   },
 
   data() {
@@ -13,9 +13,9 @@ export default {
       apiData: [] as YourDataType[],  // Initialize apiData as an empty array to store your API data.
       productsCount: 0,            // Initialize productsCount as 0.
       selectedImages: {} as { [key: string]: number },  // Initialize selectedImages as an empty object to keep track of selected images.
-      isModalOpen: false,
-      selectedArticle: null as YourDataType | null,
-      selectedImageIndex: null as Number | null,
+      isModalOpen: false,           // Initialize isModalOpen to control the visibility of the modal.
+      selectedArticle: null as YourDataType | null,  // Initialize selectedArticle to store the currently selected article.
+      selectedImageIndex: null as Number | null,     // Initialize selectedImageIndex to store the index of the selected image.
       sidebarItems: [
         'Clothing',
         'Our best-seller',
@@ -33,43 +33,43 @@ export default {
         'Bermuda shorts',
         'Basics',
         'Business Wear'
-      ],
-      selectedIndex: 0
+      ], // Initialize sidebarItems with category names.
+      selectedIndex: 0,
     };
   },
   methods: {
     openModal(article: YourDataType, imageIndex: number) {
-      console.log('Opening modal')
-      this.selectedArticle = article;
-      this.selectedImageIndex = imageIndex;
-      this.isModalOpen = true;
+      console.log('Opening modal');
+      this.selectedArticle = article;  // Set the selected article.
+      this.selectedImageIndex = imageIndex;  // Set the selected image index.
+      this.isModalOpen = true;  // Set isModalOpen to true to show the modal.
     },
 
     closeModal() {
-      this.isModalOpen = false;
+      this.isModalOpen = false;  // Close the modal by setting isModalOpen to false.
     },
 
     fetchData() {
-      let endpoint = '/men'; // Default to men.
+      let endpoint = '/men'; // Default to 'men' if no gender is selected.
 
       if (this.selectedGender === 'men') {
-        endpoint = '/men';
+        endpoint = '/men';  // Change endpoint to 'men' if 'men' is selected.
       } else if (this.selectedGender === 'women') {
-        endpoint = '/women';
+        endpoint = '/women';  // Change endpoint to 'women' if 'women' is selected.
       }
 
-      console.log('StoreContent.vue: Fetching data for endpoint:', endpoint);
+      console.log('StoreContent.vue: Fetching data for endpoint:', endpoint);  // Log the endpoint being fetched.
 
       if (endpoint) {
         import('@/api/apiService').then((module) => {
           module.fetchApiData(endpoint)
             .then((response) => {
-              this.apiData = response.data;
+              this.apiData = response.data;  // Store the fetched API data.
               this.apiData.forEach((_, index) => {
-                this.selectedImages[index] = 0;
+                this.selectedImages[index] = 0;  // Initialize selectedImages for each item.
               });
               if (this.apiData.length > 0) {
-                this.productsCount = this.apiData.length;
+                this.productsCount = this.apiData.length;  // Set productsCount to the number of fetched products.
               }
             })
             .catch((error) => {
@@ -85,7 +85,7 @@ export default {
   },
   created() {
     // This hook is executed when the component is created.
-    this.fetchData();
+    this.fetchData();  // Fetch data when the component is created.
   },
   watch: {
     selectedGender: 'fetchData', // Watch for changes in selectedGender and refetch data when it changes.
@@ -191,17 +191,5 @@ img {
   background-color: transparent;
   padding: 8px;
   border-radius: 50%;
-}
-
-.left-arrow {
-  left: 0;
-}
-
-.right-arrow {
-  right: 0;
-}
-
-.item:hover .arrow {
-  display: block;
 }
 </style>
