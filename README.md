@@ -53,4 +53,4 @@ json-server --watch db.json --port 3001
 npm run dev
 ```
 
-5. Press o and the side should open in your default browser.
+5. Press o and the site should open in your default browser.
